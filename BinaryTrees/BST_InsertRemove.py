@@ -49,7 +49,7 @@ def remove(root, val):
             # Or else you will lose the updated tree structure
             # FOR DEMO: Draw a 5 depth tree, and make sure the minNode 
             # has a right node ATLEAST to go through this scenario
-            root.right = remove(root.right, minNode.val)
+            root.right = remove(root.right, minNode.val)    # We do this to avoid duplicate
 
     return root
         
