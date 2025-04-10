@@ -1,21 +1,25 @@
+# https://neetcode.io/courses/dsa-for-beginners/20
+# Time complexity -> O(n)
+from collections import deque
+
 def bfs(root):
+
+    # This is a Double Ended Queue
+    # First in First out
     queue = deque()
 
     if root:
+        # Appends just the root node, which has the 
+        # pointers to its left and right childs.. and then they have the same
+        # So the len(queue) at this point is 1 as it just has the root node
         queue.append(root)
+    
+    while queue:
+        curr = queue.popleft()
+        print(curr.val)
 
-    level = 0
-    while len(queue) > 0:
-        print("level: ", level)
-        for i in range(len(queue)):
-            curr = queue.popleft()
-
-            if curr.left:
-                queue.append(curr.left)
-            if curr.right:
-                queue.append(curr.right)
-
-        level += 1
-
-
-- methodology, microservices, springboot
+        if curr.left:
+            queue.append(curr.left)
+        if curr.right:
+            queue.append(curr.right)
+    
