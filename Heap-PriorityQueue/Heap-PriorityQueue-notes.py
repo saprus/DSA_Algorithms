@@ -3,6 +3,11 @@
 https://neetcode.io/courses/dsa-for-beginners/23
 Check notes in the link (scroll below the video)
 
+# For Heaps, always make sure to satisfy below 2 properties:
+    # Structure Property -> All nodes should be filled from left to right
+    # Order Property -> Follow it as per Min Heap or Max Heap
+
+
 In heap priority queue
 
 - Two Types of Heaps: Min Heap and Max Heap
