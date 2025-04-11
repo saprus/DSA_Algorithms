@@ -14,12 +14,14 @@ def bfs(root):
         # So the len(queue) at this point is 1 as it just has the root node
         queue.append(root)
     
-    while queue:
-        curr = queue.popleft()
-        print(curr.val)
-
-        if curr.left:
-            queue.append(curr.left)
-        if curr.right:
-            queue.append(curr.right)
-    
+    level = 0
+    while len(queue) > 0:
+        print("level: ", level)
+        for i in range(len(queue)):
+            curr = queue.popleft()
+            print(curr.val)
+            if curr.left:
+                queue.append(curr.left)
+            if curr.right:
+                queue.append(curr.right)
+        level += 1
