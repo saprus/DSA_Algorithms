@@ -7,8 +7,13 @@ Check notes in the link (scroll below the video)
     # Structure Property -> All nodes should be filled from left to right
     # Order Property -> Follow it as per Min Heap or Max Heap
 
+Time Complexity:
+Get Min/Max     -> O(1)
+Push/Pop        -> O(logN)
+Heapify         -> O(n)
+    
 
-In heap priority queue
+In heap priority queue sole purpose is to get Min/Max value
 
 - Two Types of Heaps: Min Heap and Max Heap
     Min heaps have the smallest value at the root node. 
@@ -22,8 +27,8 @@ In heap priority queue
 Max Heap: Every node is greater than both its childs
 Min Heap: Vice versa
 
-If you were to put the nodes in an array from left to right on each level
-and leave index 0 empty
+If you were to put the nodes in an array from left to right 
+on each level and leave index 0 empty
 The you can access the leftChild, rightChild, parent nodes using this formula
 
 leftChild = 2 * i
