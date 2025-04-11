@@ -1,3 +1,6 @@
+# https://neetcode.io/courses/dsa-for-beginners/24
+# Time complexity = O(logN)
+
 class Heap:
     def __init__(self):
         # First element of a heap has to be a Zero (in the array representation)
@@ -12,7 +15,7 @@ class Heap:
 
         # Percolate up by comparing parent node to val using the formula
         # Since this is Min Heap we check if heap[i] < heap[parent] and replace them
-        
+
         # Max Heap is vice versa 
         # while self.heap[i] > self.heap[i // 2]:
 
