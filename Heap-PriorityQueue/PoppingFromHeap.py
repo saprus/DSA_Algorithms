@@ -1,4 +1,5 @@
 # https://neetcode.io/courses/dsa-for-beginners/24
+# Time Complexity = O(logN)
 
 # For Heaps, always make sure to satisfy below 2 properties:
     # Structure Property -> All nodes should be filled from left to right
